@@ -1,15 +1,19 @@
-let jogador1 = 1
-let jogador2 = 3
+let jogador1 = 0
+let jogador2 = 0
 let placar
 
-jogador1 != -1 && jogador2 != -1 ? console.log('Os jogadores são válidos') : console.log('Os jogadores são inválidos');
+jogador1 != -1 && jogador2 != -1 ? console.log('Os jogadores são válidos') : console.log('Os jogadores são inválidos'); {
 
-if (jogador1 > 0) {
-    console.log('O jogador 1 marcou ponto!')
-} else if (jogador2 > 0) {
-    console.log('O jogador 2 marcou ponto!')
-} else {
-    console.log('Niguém marcou ponto!')
+    if (jogador1 > 0 && jogador2 < jogador1) {
+        console.log('O jogador 1 marcou ponto!');
+        placar = jogador1 > jogador2
+    } else if (jogador2 > 0 && jogador1 < jogador2) {
+        console.log('O jogador 2 marcou ponto!');
+        placar = jogador2 > jogador1
+    } else {
+        console.log('Niguém marcou ponto!')
+    }
+
 }
 
 
@@ -25,7 +29,6 @@ switch (placar) {
         break;
     default:
         console.log('Ninguém ganhou.')
-        break;
 }
 
 
