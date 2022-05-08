@@ -2,6 +2,7 @@
 // ELSE IF vem após um IF ou outro ELSE IF, e testa outra condições
 // ELSE vem depois de IFs e/ou ELSE IFs, é executado quando os anteriores são uma cndição falsa
 
+
 let jogador1 = 0
 let jogador2 = 0
 let placar
