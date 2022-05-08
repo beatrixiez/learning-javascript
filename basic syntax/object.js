@@ -2,22 +2,47 @@
 
 // Declarando um objeto
 
-let pessoa = {
+var pessoa = {
     nome: 'Beatriz',
     sobrenome: 'Silva',
     idade: 19,
+    emails: [
+        'bia@email.com',
+        'beatriz@email.com'
+    ],
+    endereco: {
+        cidade: 'São Paulo',
+        pais: 'Brasil'
+    },
     estudar: function () {
         alert('Estudando')
     }
 }
 
+
 // Acessando o valor de um objeto
 
 console.log(pessoa['nome'])
 
-// ou
-
 console.log(pessoa.sobrenome)
+
+
+// Trocando o valor de uma propriedade
+
+pessoa.sobrenome = 'Miranda'
+
+
+// Inserindo uma nova propriedade
+
+pessoa.ultimoNome = 'Barreto'
+console.log(pessoa.ultimoNome)
+
+pessoa["ultimoNome"] = 'Barreto';
+console.log(pessoa.ultimoNome)
+
+pessoa.endereco['estado'] = 'nome do estado'
+console.log(pessoa.endereco.estado)
+
 
 // Manipulando objetos: desestruturação
 
@@ -29,6 +54,6 @@ console.log(idade)
 
 // ou
 
-var {nome, sobrenome, idade, estudar} = pessoa
-console.log(nome, sobrenome, idade, estudar)
+var {nome, sobrenome, idade, emails, endereco: {cidade, pais}, estudar} = pessoa
+console.log(nome, sobrenome, idade, emails, cidade, pais, estudar)
 
