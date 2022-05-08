@@ -34,13 +34,10 @@ pessoa.sobrenome = 'Miranda'
 
 // Inserindo uma nova propriedade
 
-pessoa.ultimoNome = 'Barreto'
-console.log(pessoa.ultimoNome)
-
 pessoa["ultimoNome"] = 'Barreto';
 console.log(pessoa.ultimoNome)
 
-pessoa.endereco['estado'] = 'nome do estado'
+pessoa.endereco['estado'] = 'São Paulo'
 console.log(pessoa.endereco.estado)
 
 
