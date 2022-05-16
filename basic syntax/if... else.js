@@ -1,6 +1,6 @@
 // IF executa uma condição se ela for verdadeira
-// ELSE IF vem após um IF ou outro ELSE IF, e testa outra condições
-// ELSE vem depois de IFs e/ou ELSE IFs, é executado quando os anteriores são uma cndição falsa
+// ELSE IF vem após um IF ou outro ELSE IF, e testa outra condição
+// ELSE vem depois de IFs e/ou ELSE IFs, e é executado quando os anteriores são uma condição falsa
 
 
 let jogador1 = 0
