@@ -49,7 +49,7 @@ console.log(nome)
 var idade = pessoa.idade
 console.log(idade)
 
-// ou
+// ou (recomendado)
 
 var {nome, sobrenome, idade, emails, endereco: {cidade, pais}, estudar} = pessoa
 console.log(nome, sobrenome, idade, emails, cidade, pais, estudar)
