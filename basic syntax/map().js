@@ -14,3 +14,32 @@ const nomeIdade = nome.map((item, index) => {
 })
 
 console.log(nomeIdade)
+
+const numbers = [2, 3, 5, 8]
+
+const num = numbers.map(item => item * 2)
+console.log(num)
+
+const produtos = [
+    {
+        nome: 'monitor',
+        preco: 1200
+    },
+    {
+        nome: 'teclado',
+        preco: 800
+    },
+    {
+        nome: 'mouse',
+        preco: 300
+    },
+    {
+        nome: 'gabinete',
+        preco: 4700
+    }
+]
+
+let total = 0
+
+produtos.map(item => total += item.preco)
+console.log('Valor total dos produtos: ' + total)
