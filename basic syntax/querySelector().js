@@ -1,3 +1,13 @@
+/*
+
+querySelector(  ) é um método que retorna o primeiro 
+elemento dentro do documento que corresponde ao seletor.
+
+querySelectorAll(  ) retorna todos os elementos 
+dentro do documento que correspondem ao seletor.
+
+*/
+
 const li = document.querySelectorAll('li')
 
 li.forEach((item) => {
